@@ -774,6 +774,24 @@ p.descript_form {
 	.form h2{
 		padding: 0 30px
 	}
+	
+	.content_right{
+		display: flex;
+		flex-direction: row-reverse;
+		max-width: 570px;
+    min-width: 360px;
+    margin: 30px 0px;
+ 
+	}
+	.content_right .wrap_270{
+		max-width: inherit
+	}
+	.content_right p{
+		 padding-left: 30px;
+	}
+	.content_right h3{
+		margin-left: 30px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1038,6 +1056,14 @@ p.descript_form {
 	p.descript_form {
 		padding-left: 0
 	}
+	.content_right{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.content_right img{
+		width: min-content;
+    margin: 0 auto;
+	}
 }
 
 
@@ -1047,3 +1073,24 @@ p.descript_form {
 	}
 	 
 }
+
+@media (min-width:0px) and (max-width: 360px)  {
+	.content_right{
+		display: flex;
+		flex-direction: column-reverse;
+		min-width: inherit;
+	}
+	.content_right img{
+		width: min-content;
+    margin: 0 auto;
+	}
+	.content_left{
+		min-width: inherit;
+	}
+	.wrap_585{
+		padding: 0 20px;
+	}
+	.left_50, .right_50{
+		margin: auto
+	}
+	}
